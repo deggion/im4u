@@ -1,0 +1,79 @@
+// USER VARIABLES SECTION
+
+$accent: #67C1E8; // Accent Color
+$fontsize: 16px; // Body Font Size
+$textcolor: #FFFFFF; // Text Color
+$lineheight: 1.65; // Document Line Height
+$userfont: 'Noto Sans', sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 118px;
+$gutter: $grid-gutter-width;
+
+// IMPORT SECTION
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;800&display=swap');
+
+@import "mixins";
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
+//@import 'node_modules/bootstrap/scss/_utilities.scss'; // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+// GENERAL CSS SETTINGS
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $textcolor;
+	&:hover {
+		color: $textcolor;
+	}
+}
+
+body {
+	font-family: $userfont;
+	font-size: $fontsize;
+	line-height: $lineheight;
+	color: $textcolor;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	background: #1E1E20;
+}
+
+._over-hidden {
+	overflow: hidden;
+}
+
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
+}

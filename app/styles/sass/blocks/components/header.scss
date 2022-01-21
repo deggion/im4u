@@ -1,0 +1,15 @@
+.header {
+	&__nav {
+		gap: 11px;
+		li {
+			a {
+				span {
+					text-transform: uppercase;
+				}
+				img {
+					margin-left: 6px;
+				}
+			}
+		}
+	}
+}

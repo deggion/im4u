@@ -1,0 +1,28 @@
+.btn-primary {
+	display: inline-flex;
+	background: #67C1E8;
+	font-size: 12px;
+	line-height: 150%;
+	text-align: center;
+	letter-spacing: 1.25px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 14px 16px;
+	border: none;
+}
+
+.btn-secondary {
+	display: inline-flex;
+	background: transparent;
+	font-size: 12px;
+	line-height: 150%;
+	text-align: center;
+	letter-spacing: 1.25px;
+	text-transform: uppercase;
+	color: #67C1E8;
+	padding: 13px 16px;
+	border: 1px solid #67C1E8;
+	&:hover {
+		color: #67C1E8;
+	}
+}
