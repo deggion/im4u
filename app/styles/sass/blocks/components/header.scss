@@ -1,4 +1,13 @@
 .header {
+	z-index: 3;
+	position: fixed;
+	width: 100%;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%);
+	&__logo {
+		margin-left: -19px;
+	}
 	&__nav {
 		gap: 11px;
 		li {

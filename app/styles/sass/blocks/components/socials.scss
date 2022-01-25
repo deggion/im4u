@@ -1,0 +1,19 @@
+.socials {
+	z-index: 2;
+	position: fixed;
+	top: 50%;
+	right: calc(50% - 684px);
+	transform: translate(50%, -50%);
+	ul {
+		gap: 40px;
+		li {
+			width: 16px;
+			height: 16px;
+			a {
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+}

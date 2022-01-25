@@ -1,0 +1,42 @@
+.main-video {
+	margin: 0 auto;
+	max-width: 1320px;
+	position: relative;
+	height: calc(100vh - 60px);
+	&::before {
+		content: "";
+		position: absolute;
+		background: rgba(0,0,0,.4);
+		height: 100%;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+	video {
+		object-fit: cover;
+		height: calc(100vh - 60px);
+		max-width: 1320px;
+		vertical-align: middle;
+	}
+	&__info {
+		z-index: 2;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translate(0, -50%);
+		h1 {
+			width: 100%;
+			max-width: 640px;
+			font-family: Noto Sans, sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 46px;
+			line-height: 150%;
+			display: flex;
+			align-items: center;
+			letter-spacing: 1.25px;
+			text-transform: uppercase;
+		}
+	}
+}
