@@ -1,0 +1,24 @@
+.gallery {
+	&__container {
+		& > div {
+			height: 480px;
+			&:first-of-type {
+				width: 320px;
+			}
+			&:nth-of-type(2) {
+				width: 300px;
+				img	{
+					width: 300px;
+					height: 230px;
+				}
+			}
+			&:last-of-type {
+				width: 434px;
+			}
+			img {
+				object-fit: cover;
+				height: 480px;
+			}
+		}
+	}
+}

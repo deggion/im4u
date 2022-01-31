@@ -1,4 +1,7 @@
 .mb {
+	&-30 {
+		margin-bottom: 30px;
+	}
 	&-40 {
 		margin-bottom: 40px;
 	}
@@ -14,11 +17,17 @@
 	&-95 {
 		margin-bottom: 95px;
 	}
+	&-340 {
+		margin-bottom: 340px;
+	}
 }
 
 .mt {
 	&-30 {
 		margin-top: 30px;
+	}
+	&-50 {
+		margin-top: 50px;
 	}
 }
 

@@ -1,0 +1,19 @@
+.background {
+	&.bottom {
+		position: absolute;
+		z-index: -1;
+		bottom: 31px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 100%;
+		height: 725px;
+		img	{
+			position: absolute;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+}
