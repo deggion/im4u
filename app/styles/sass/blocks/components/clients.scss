@@ -1,0 +1,15 @@
+.clients {
+	&__container {
+		& > div {
+			flex-wrap: wrap;
+			gap: 80px;
+			a {
+				img {
+					width: 100%;
+					max-width: 495px;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
