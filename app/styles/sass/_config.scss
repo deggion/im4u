@@ -8,7 +8,7 @@ $userfont: 'Noto Sans', sans-serif; // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 118px;
+$grid-gutter-width: 240px;
 $gutter: $grid-gutter-width;
 
 // IMPORT SECTION
@@ -74,6 +74,6 @@ body {
 
 @media (min-width: 1400px) {
 	.container {
-		max-width: 1320px;
+		max-width: none;
 	}
 }

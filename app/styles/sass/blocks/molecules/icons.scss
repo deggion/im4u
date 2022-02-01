@@ -1,0 +1,41 @@
+.icon {
+	&-telephone {
+		&::before {
+			content: '';
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			-webkit-mask: url(../images/dist/icons/telephone.svg) no-repeat 50% 50%;
+			mask: url(../images/dist/icons/telephone.svg) no-repeat 50% 50%;
+			-webkit-mask-size: cover;
+			mask-size: cover;
+			background: #FFFFFF;
+		}
+	}
+	&-mail {
+		&::before {
+			content: '';
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			-webkit-mask: url(../images/dist/icons/mail.svg) no-repeat 50% 50%;
+			mask: url(../images/dist/icons/mail.svg) no-repeat 50% 50%;
+			-webkit-mask-size: cover;
+			mask-size: cover;
+			background: #FFFFFF;
+		}
+	}
+	&-top {
+		&::before {
+			content: '';
+			width: 16px;
+			height: 16px;
+			display: inline-block;
+			-webkit-mask: url(../images/dist/icons/arrow-up.svg) no-repeat 50% 50%;
+			mask: url(../images/dist/icons/arrow-up.svg) no-repeat 50% 50%;
+			-webkit-mask-size: cover;
+			mask-size: cover;
+			background: #67C1E8;
+		}
+	}
+}
