@@ -2,6 +2,7 @@
 
 $accent: #67C1E8; // Accent Color
 $fontsize: 16px; // Body Font Size
+$fontsize1199: 14px;
 $textcolor: #FFFFFF; // Text Color
 $lineheight: 1.65; // Document Line Height
 $userfont: 'Noto Sans', sans-serif; // User Font Family
@@ -66,14 +67,22 @@ body {
 	position: relative;
 	overflow-x: hidden;
 	background: #1E1E20;
+	@include media-max(1199) {
+		$fontsize: 14px;
+		font-size: $fontsize;
+	}
+}
+
+.container {
+	max-width: none;
+	@include media-max(1199) {
+		padding: 0 75px;
+	}
+	@include media-max(991) {
+		padding: 0 12px;
+	}
 }
 
 ._over-hidden {
 	overflow: hidden;
-}
-
-@media (min-width: 1400px) {
-	.container {
-		max-width: none;
-	}
 }

@@ -9,6 +9,9 @@
 		background: #67c1e8;
 		top: 0;
 		left: 0;
+		@include media-max(991) {
+			display: none;
+		}
 	}
 	&::after {
 		content: '';
@@ -18,6 +21,9 @@
 		background: #67c1e8;
 		bottom: 0;
 		left: 0;
+		@include media-max(991) {
+			display: none;
+		}
 	}
 	&.exclusion {
 		z-index: auto;
@@ -48,9 +54,15 @@
 			background: #FFFFFF;
 			width: 16px;
 		}
+		@include media-max(991) {
+			display: none;
+		}
 	}
 	&.black {
 		background: #000000;
 		z-index: 1;
+	}
+	@include media-max(991) {
+		padding: 0;
 	}
 }

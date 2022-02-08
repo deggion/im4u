@@ -18,6 +18,9 @@
 		max-width: 100vw;
 		width: 100%;
 		vertical-align: middle;
+		@include media-max(991) {
+			height: calc(100vh + 58px);
+		}
 	}
 	&__container {
 		padding: 0 60px;
@@ -41,5 +44,9 @@
 			letter-spacing: 1.25px;
 			text-transform: uppercase;
 		}
+	}
+	@include media-max(991) {
+		margin: 0;
+		height: calc(100vh + 58px);
 	}
 }

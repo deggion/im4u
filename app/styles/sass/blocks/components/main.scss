@@ -10,6 +10,9 @@
 		width: 1px;
 		background: #67c1e8;
 		z-index: 4;
+		@include media-max(991) {
+			display: none;
+		}
 	}
 	&::after {
 		content: '';
@@ -20,5 +23,8 @@
 		width: 1px;
 		background: #67c1e8;
 		z-index: 4;
+		@include media-max(991) {
+			display: none;
+		}
 	}
 }

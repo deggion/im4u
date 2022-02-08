@@ -16,4 +16,7 @@
 			}
 		}
 	}
+	@include media-max(991) {
+		display: none;
+	}
 }

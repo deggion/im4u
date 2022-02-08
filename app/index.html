@@ -14,7 +14,7 @@
 	<body>
 		<main class="main">
 			<header class="header">
-				<div class="container d-flex align-items-center justify-content-between">
+				<div class="header__container container d-flex align-items-center justify-content-between">
 					<a href="#" class="header__logo logo">
 						<img src="images/dist/logo.png" alt="logo">
 					</a>
@@ -68,7 +68,7 @@
 									<span>Контакты</span>
 								</a>
 							</li>
-							<li>
+							<li id="lang">
 								<div class="dropdown">
 									<a class="header__nav-link d-flex align-items-center" href="#" role="button" id="language" data-bs-toggle="dropdown" aria-expanded="false">Рус</a>
 									<ul class="dropdown-menu" aria-labelledby="language">
@@ -79,10 +79,26 @@
 								</div>
 							</li>
 						</ul>
-						<a href="tel:+380968642323">
+						<a class="header__tel" href="tel:+380968642323">
 							<img src="images/dist/icons/telephone.svg" alt="telephone">
-							<span>+380 96 864 23 23</span>
+							<span class="header__tel-desktop">+380 96 864 23 23</span>
+							<span class="header__tel-mob">
+								<img src="images/dist/icons/phone.svg" alt="phone">
+							</span>
 						</a>
+						<div class="header__language dropdown">
+							<a class="d-flex align-items-center" href="#" role="button" id="language-mob" data-bs-toggle="dropdown" aria-expanded="false">Рус</a>
+							<ul class="dropdown-menu" aria-labelledby="language">
+								<li><a class="dropdown-item" href="#">Укр</a></li>
+								<li><a class="dropdown-item" href="#">Eng</a></li>
+								<li><a class="dropdown-item" href="#">Рус</a></li>
+							</ul>
+						</div>
+						<div class="header__burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</div>
 				</div>
 			</header>
@@ -616,6 +632,7 @@
 			<div class="scroll-top">
 				<i class="icon-top"></i>
 			</div>
+			<div class="overlay"></div>
 		</main>
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

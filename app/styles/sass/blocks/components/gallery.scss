@@ -1,19 +1,24 @@
 .gallery {
 	&__container {
 		& > div {
-			height: 480px;
 			&:first-of-type {
-				width: 320px;
+				img {
+					max-width: 320px;
+					width: 100%;
+				}
 			}
 			&:nth-of-type(2) {
-				width: 300px;
 				img	{
-					width: 300px;
+					max-width: 300px;
+					width: 100%;
 					height: 230px;
 				}
 			}
 			&:last-of-type {
-				width: 434px;
+				img {
+					max-width: 434px;
+					width: 100%;
+				}
 			}
 			img {
 				object-fit: cover;
