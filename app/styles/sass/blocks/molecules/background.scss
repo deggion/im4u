@@ -15,5 +15,25 @@
 			top: 0;
 			left: 0;
 		}
+		@include media-max(991) {
+			bottom: -280px;
+		}
+		@include media-max(767) {
+			height: 300px;
+			bottom: -70px;
+		}
+		@include media-max(575) {
+			height: 230px;
+		}
+	}
+	.desktop {
+		@include media-max(575) {
+			display: none;
+		}
+	}
+	.mobile {
+		@include media-min(576) {
+			display: none;
+		}
 	}
 }

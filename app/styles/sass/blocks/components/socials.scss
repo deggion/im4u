@@ -16,7 +16,12 @@
 			}
 		}
 	}
+	&.active {
+		display: block;
+	}
 	@include media-max(991) {
 		display: none;
+		z-index: 3;
+		top: 180px;
 	}
 }

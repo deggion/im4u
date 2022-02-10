@@ -87,11 +87,11 @@
 			left: 0;
 		}
 		@include media-max(991) {
-			padding-top: 80px;
+			padding-top: 30px;
 			flex-direction: column;
 			position: absolute;
 			left: 100%;
-			top: 0;
+			top: 58px;
 			width: 100%;
 			min-height: 100vh;
 			height: 100%;

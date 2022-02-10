@@ -6,4 +6,16 @@
 	letter-spacing: 1.25px;
 	text-transform: uppercase;
 	color: #67C1E8;
+	@include media-max(991) {
+		font-size: 38px;
+	}
+	@include media-max(767) {
+		font-size: 30px;
+	}
+	@include media-max(575) {
+		font-size: 25px;
+	}
+	@include media-max(420) {
+		font-size: 20px;
+	}
 }

@@ -6,5 +6,16 @@
 		font-size: 20px;
 		line-height: 160%;
 		text-align: center;
+		@include media-max(767) {
+			font-size: 16px;
+		}
+		@include media-max(420) {
+			font-size: 12px;
+		}
+	}
+	.main-title {
+		@include media-max(767) {
+			margin-bottom: 15px;
+		}
 	}
 }

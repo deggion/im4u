@@ -1,4 +1,14 @@
 .cases {
+	#casesDesk {
+		@include media-max(991) {
+			display: none !important;
+		}
+	}
+	#slickCasesMob {
+		@include media-min(992) {
+			display: none !important;
+		}
+	}
 	&__container {
 		gap: 40px;
 	}
@@ -22,6 +32,9 @@
 						p {
 							font-size: 16px;
 							line-height: 150%;
+							@include media-max(767) {
+								font-size: 11px;
+							}
 						}
 					}
 					&-nav {
@@ -68,6 +81,9 @@
 				text-align: center;
 				letter-spacing: 1.25px;
 				text-transform: uppercase;
+				@include media-max(767) {
+					font-size: 11px;
+				}
 			}
 		}
 		&-title {
@@ -79,6 +95,9 @@
 				font-size: 26px;
 				line-height: 36px;
 				text-transform: uppercase;
+				@include media-max(767) {
+					font-size: 16px;
+				}
 			}
 			p {
 				margin: 0;
@@ -87,7 +106,28 @@
 				line-height: 160%;
 				text-align: left;
 				transition: .4s linear;
+				@include media-max(767) {
+					font-size: 12px;
+				}
 			}
 		}
+		@include media-max(991) {
+			width: 100%;
+		}
+		@include media-max(767) {
+			height: 380px;
+			padding: 20px;
+		}
+		@include media-max(575) {
+			height: 280px;
+		}
+		&:not(:last-of-type) {
+			@include media-max(991) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	@include media-max(767) {
+		margin-bottom: 0;
 	}
 }

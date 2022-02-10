@@ -24,6 +24,21 @@
 	}
 	&__container {
 		padding: 0 60px;
+		.btn-general,
+		.btn-alternative {
+			@include media-max(767) {
+				min-height: 46px;
+				height: fit-content;
+			}
+		}
+		.btn-general {
+			@include media-max(767) {
+				margin-bottom: 12px;
+			}
+		}
+		@include media-max(991) {
+			padding: 0 40px;
+		}
 	}
 	&__info {
 		z-index: 2;
@@ -43,6 +58,12 @@
 			align-items: center;
 			letter-spacing: 1.25px;
 			text-transform: uppercase;
+			@include media-max(991) {
+				font-size: 33px;
+			}
+			@include media-max(767) {
+				font-size: 25px;
+			}
 		}
 	}
 	@include media-max(991) {
