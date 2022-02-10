@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 	
 	headerBurger.on('click', function () {
+		$(this).toggleClass('cross')
 		headerNav.toggleClass('active')
 		overlay.toggleClass('active')
 		html.toggleClass('_over-hidden')

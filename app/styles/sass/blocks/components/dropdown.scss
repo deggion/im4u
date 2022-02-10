@@ -57,6 +57,10 @@
 		border-radius: 0;
 		background: #1e1e20;
 		padding: 24px 32px;
+		&.small {
+			min-width: auto;
+			transform: translate(-30px, 28px) !important;
+		}
 		li {
 			&:not(:last-of-type) {
 				margin-bottom: 23px;
