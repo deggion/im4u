@@ -74,6 +74,30 @@
 			}
 		}
 		&-link {
+			text-transform: uppercase;
+			transition: .2s linear;
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: -4px;
+				left: 0;
+				width: 0;
+				height: 1px;
+				background: #67C1E8;
+				transition: .2s linear;
+			}
+			&:hover {
+				color: #67C1E8;
+				&::before {
+					width: 100%;
+				}
+			}
+			&.show {
+				@include media-max(991) {
+					margin-bottom: 10px;
+				}
+			}
 			@include media-max(991) {
 				justify-content: center;
 			}
@@ -130,6 +154,9 @@
 			transform: translate3d(-13px, 25px, 0px) !important;
 			padding: 10px 0;
 			min-width: 4rem;
+		}
+		.header__nav-link {
+			margin-bottom: 0;
 		}
 		@include media-min(992) {
 			display: none;

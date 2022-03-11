@@ -1,0 +1,82 @@
+.main-nav {
+	padding: 70px 60px;
+	background: #18181a;
+	z-index: 5;
+	width: 100%;
+	position: fixed;
+	min-height: 100vh;
+	height: 100vh;
+	overflow: auto;
+	opacity: 0;
+	visibility: hidden;
+	transition: .4s;
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	@include media-max(575) {
+		padding: 50px 40px;
+	}
+	&__block {
+		max-width: 260px;
+		width: 100%;
+		margin: 0 60px 100px 0;
+		@include media-max(750) {
+			max-width: none;
+			margin: 0 60px 60px 0;
+		}
+		span {
+			margin: 0 0 35px 0;
+			display: inline-block;
+			font-weight: 500;
+			font-size: 16px;
+			text-transform: uppercase;
+			color: #67C1E8;
+		}
+		ul {
+			li {
+				&:not(:last-of-type) {
+					margin: 0 0 18px 0;
+				}
+				a {
+					font-weight: 500;
+					font-size: 12px;
+					letter-spacing: 1.25px;
+					text-transform: uppercase;
+					transition: .2s linear;
+					position: relative;
+					&::before {
+						content: '';
+						position: absolute;
+						bottom: -4px;
+						left: 0;
+						width: 0;
+						height: 1px;
+						background: #67C1E8;
+						transition: .2s linear;
+					}
+					&:hover {
+						color: #67C1E8;
+						&::before {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+	&__close {
+		cursor: pointer;
+		position: fixed;
+		right: 30px;
+		top: 30px;
+		img {
+			width: 40px;
+			height: 40px;
+			@include media-max(575) {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}

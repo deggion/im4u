@@ -27,9 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		$(this).toggleClass('cross')
 		headerNav.toggleClass('active')
 		overlay.toggleClass('active')
-		html.toggleClass('_over-hidden')
-		body.toggleClass('_over-hidden')
 		$('.socials').toggleClass('active')
+		if (headerNav.hasClass('active')) {
+			html.addClass('_over-hidden')
+			body.addClass('_over-hidden')
+		} else {
+			html.removeClass('_over-hidden')
+			body.removeClass('_over-hidden')
+		}
+		
 	})
 
 	function checkWidth() {
@@ -63,6 +69,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 	$('.footer-nav b').on('click', function () {
 		$(this).parent('.footer-nav').toggleClass('active')
+	})
+	
+	$('#dropdownNav').on('click', function () {
+		$('.main-nav').addClass('active')
+		$('html, body').addClass('_over-hidden')
+	})
+	
+	$('.main-nav__close').on('click', function () {
+		$('.main-nav').removeClass('active')
+		$('html, body').removeClass('_over-hidden')
 	})
 
 })
