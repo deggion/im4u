@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		window.scrollTo(pageYOffset, 0)
 	})
 
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 900) {
-			$('.header').addClass('top')
-		} else {
-			$('.header').removeClass('top')
-		}
-	})
+	// $(window).scroll(function () {
+	// 	if ($(this).scrollTop() > 900) {
+	// 		$('.header').addClass('top')
+	// 	} else {
+	// 		$('.header').removeClass('top')
+	// 	}
+	// })
 	
 	headerBurger.on('click', function () {
 		$(this).toggleClass('cross')

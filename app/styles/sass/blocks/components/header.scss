@@ -1,5 +1,5 @@
 .header {
-	z-index: 3;
+	z-index: 5;
 	position: fixed;
 	width: 100%;
 	top: 30px;
@@ -7,8 +7,9 @@
 	transform: translate(-50%);
 	transition: top, background .4s linear;
 	&.top {
-		padding: 0 60px;
-		width: calc(100% - 120px);
+		padding: 0 120px;
+		//width: calc(100% - 120px);
+		width: 100%;
 		background: #1e1e20;
 		position: fixed;
 		top: 0;
@@ -16,6 +17,12 @@
 		transform: translateX(-50%);
 		.container {
 			padding: 0;
+			@include media-max(1199) {
+				padding: 0 64px;
+			}
+			@include media-max(991) {
+				padding: 0;
+			}
 		}
 		@include media-max(1199) {
 			padding: 0 12px;
@@ -138,8 +145,8 @@
 		&-mob {
 			display: inline-block;
 			img {
-				width: 22px;
-				height: 16.5px;
+				width: 18px;
+				height: 18px;
 			}
 			@include media-min(992) {
 				display: none;
