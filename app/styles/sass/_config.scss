@@ -50,6 +50,10 @@ ul {
 	padding: 0;
 }
 
+p {
+	margin: 0;
+}
+
 a {
 	text-decoration: none;
 	color: $textcolor;
@@ -85,4 +89,24 @@ body {
 
 ._over-hidden {
 	overflow: hidden;
+}
+
+
+
+
+.main.cases {
+	.row {
+		--bs-gutter-x: 0px;
+		padding: 0 100px;
+		@include media-max(1199) {
+			padding: 0 55px;
+		}
+		@include media-max(991) {
+			padding: 0;
+		}
+	}
+	.row>* {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }

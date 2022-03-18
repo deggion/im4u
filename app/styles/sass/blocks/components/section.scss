@@ -28,6 +28,15 @@
 	&.exclusion {
 		z-index: auto;
 	}
+	.padding-top {
+		padding-top: 135px !important;
+		@include media-max(1199) {
+			padding-top: 115px !important;
+		}
+		@include media-max(991) {
+			padding-top: 55px !important;
+		}
+	}
 	&__container {
 		padding: 0;
 		& > div {

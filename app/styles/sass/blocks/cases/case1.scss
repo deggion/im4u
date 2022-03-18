@@ -1,0 +1,42 @@
+.case1 {
+	&__text {
+		h2 {
+			font-weight: 500;
+			font-size: 46px;
+			letter-spacing: 1.25px;
+			text-transform: uppercase;
+			background: radial-gradient(50% 90241.69% at 50% 100%, #67C1E8 0%, #3B4C55 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+			@include media-max(767) {
+				font-size: 36px;
+			}
+			@include media-max(575) {
+				font-size: 20px;
+			}
+		}
+		p {
+			font-size: 20px;
+			&:not(:last-of-type) {
+				margin-bottom: 30px;
+			}
+			@include media-max(1199) {
+				font-size: 16px;
+			}
+			@include media-max(575) {
+				font-size: 12px;
+			}
+		}
+		@include media-max(991) {
+			margin: 45px 0 30px 0;
+		}
+	}
+	&__image {
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
