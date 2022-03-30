@@ -12,6 +12,7 @@
 		max-width: 250px;
 		width: 100%;
 		border-right: 1px solid #67C1E8;
+		padding-right: 20px;
 		@include media-max(991) {
 			max-width: none;
 			border: none;
@@ -65,6 +66,7 @@
 		padding: 0 20px;
 		max-width: 43.26vw;
 		width: 100%;
+		position: relative;
 		@include media-max(991) {
 			max-width: none;
 		}
@@ -153,6 +155,157 @@
 					font-size: 20px;
 					@include media-max(575) {
 						font-size: 14px;
+					}
+				}
+			}
+		}
+		&-picture {
+			position: relative;
+			margin-bottom: 12.50vw;
+			&.picture1 {
+				@include media-max(1920) {
+					bottom: -10.42vw;
+					left: -20.83vw;
+				}
+				@include media-max(991) {
+					bottom: auto;
+					left: auto;
+					text-align: center;
+				}
+				img {
+					width: 57.01vw;
+					height: 43.26vw;
+					max-width: 893px;
+					max-height: 695px;
+					@include media-max(1199) {
+						height: 37.26vw;
+						width: 51.01vw;
+					}
+					@include media-max(991) {
+						height: 57.26vw;
+						width: 73.01vw;
+					}
+				}
+			}
+			&.picture2 {
+				@include media-max(1920) {
+					bottom: -10.42vw;
+					left: -20.83vw;
+				}
+				@include media-max(991) {
+					bottom: auto;
+					left: auto;
+					text-align: center;
+				}
+				img {
+					width: 73.47vw;
+					height: 78.61vw;
+					max-width: 1058px;
+					max-height: 1132px;
+				}
+			}
+			&.picture3 {
+				@include media-max(1920) {
+					bottom: -10.42vw;
+					left: -20.83vw;
+				}
+				@include media-max(991) {
+					bottom: auto;
+					left: auto;
+					text-align: center;
+				}
+				img {
+					width: 55.35vw;
+					height: 68.13vw;
+					max-width: 797px;
+					max-height: 981px;
+				}
+			}
+			&.picture4 {
+				@include media-max(1920) {
+					bottom: -10.42vw;
+					left: -20.83vw;
+				}
+				@include media-max(991) {
+					bottom: auto;
+					left: auto;
+					text-align: center;
+				}
+				img {
+					width: 59.86vw;
+					height: 73.33vw;
+					max-width: 1006px;
+					max-height: 1200px;
+					@include media-max(991) {
+						width: 69.86vw;
+						height: 83.33vw;
+					}
+				}
+			}
+			&.picture5 {
+				@include media-max(1920) {
+					bottom: -10.42vw;
+					left: -20.83vw;
+				}
+				@include media-max(991) {
+					bottom: auto;
+					left: auto;
+					text-align: center;
+				}
+				img {
+					width: 70.90vw;
+					height: 52.64vw;
+					max-width: 1021px;
+					max-height: 758px;
+					@include media-max(1440) {
+						width: 60.90vw;
+						height: 42.64vw;
+					}
+					@include media-max(991) {
+						width: 70.90vw;
+						height: 52.64vw;
+					}
+				}
+			}
+			&.picture6 {
+				@include media-max(1920) {
+					bottom: -10.42vw;
+					left: -20.83vw;
+				}
+				@include media-max(991) {
+					bottom: auto;
+					left: auto;
+					text-align: center;
+				}
+				img {
+					width: 62.75vw;
+					height: 47.13vw;
+					max-width: 990px;
+					max-height: 765px;
+					@include media-max(991) {
+						width: 68.75vw;
+						height: 53.13vw;
+					}
+				}
+			}
+			&.picture7 {
+				@include media-max(1920) {
+					bottom: -10.42vw;
+					left: -20.83vw;
+				}
+				@include media-max(991) {
+					bottom: auto;
+					left: auto;
+					text-align: center;
+				}
+				img {
+					width: 67.65vw;
+					height: 47.03vw;
+					max-width: 1075px;
+					max-height: 778px;
+					@include media-max(991) {
+						width: 74.65vw;
+						height: 54.03vw;
 					}
 				}
 			}
